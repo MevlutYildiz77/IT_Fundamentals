@@ -1,0 +1,189 @@
+Part 1 - Basic Commands 1/2
+1.Terminali açın
+   Terminali ilk açtığınızda kullanıcınızın Home klasöründedir.
+2. Hangi klasörde olduğunuzu öğrenmek için "pwd" kullanabilirsiniz.
+   Bu komut bize root'tan (/) başlayan tam path'i verir. Root, Linux dosya sisteminin temelidir. Slash (/) ile gösterilir.
+   Kullanıcı klasörü genelde /home/username şeklindedir
+3. Masaüstüne gidin
+    cd desktop
+    Bir klasöre gitmek için "cd" (Change directory) kullanın. Örnek olarak, kullanıcı klasöründesiniz ve indirilenler'e gitmek istiyorsunuz, bunun için "cd Downloads" yazabilirsiniz.
+     Unutmayın, bu komut (diğer çoğu gibi) büyük - küçük harfe duyarlıdır. Olduğu gibi yazmanız gerekir.
+     Ama bu komutlarla ilgili bir problem var. "Raspberry Pi" adlı bir klasörde olduğunuzu düşünün, "cd Raspberry Pi" yazıyorsunuz ve size bu klasörün olmadığını söyleyen bir hata veriyor. Burada, backslash (\) kullanabilirsiniz. Ör: "cd Raspberry\ Pi".
+     Boşluklar bu şekilde belirtilir. Sadece "cd" yazarsanız kullanıcı klasörüne geçecektir.
+    Bundan önceki üst klasöre geçmek isterseniz, "cd .." yazabilirsiniz.
+İki nokta, bir üst klasörü belirtir.
+4. "clarusway" adlı bir klasör oluşturun.
+     "mkdir clarusway" - bulunduğunuz klasörde clarusway adlı bir klasör oluşturur.
+    Klasör oluşturmanız gerektiğinde "mkdir" komutunu kullanın. Örneğin, "DIY" adlı bir klasör oluşturmak istiyorsunuz, o halde "mkdir DIY" yazabilirsiniz. Daha önce de belirtildiği gibi, "DIY Hacking" adlı bir klasör oluşturmak için "mkdir DIY\ Hacking" yazabilirsiniz.
+5. Tüm klasör ve dosyaları detaylarıyla listelemek
+     "ls -al"
+    ls komutu bulunduğunuz klasördeki dosya ve klasörleri görmek için kullanılır. Gizli tüm dosya ve klasörleri "ls -a" ile görebilirsiniz."
+    Klasörü şuanda oluşturduğumuz için, içinde hiç bir dosya yok.
+6. test.txt adlı bir dosya oluşturmak
+      "touch test.txt"
+      "touch" komutu bir dosya oluşturmak için kullanılır. Her şey olabilir, boş bir metin (txt) dosyasından zip'e kadar.
+7. test.txt'ye "hello" yazmak
+      "echo" komutu, genellikle metin olmak üzere bazı verileri bir dosyaya aktarmamıza yardımcı olur.
+      "echo "hello" > test.txt"
+     
+8. test.txt'ye "My name is Martin" eklemek
+      "echo "My name is Martin" >> test.txt"
+     
+     
+9. test.txt içeriğini yazdırmak
+       Bir dosyanın içeriğini görüntülemek için "cat" komutunu kullanın. Genelde programları kolayca görüntülemek için kullanılır.
+       "cat test.txt"
+	
+10. test1.txt adında bir dosya oluşturmak ve oluştururken "hello, this is second text file" yazmak
+      "cat > test1.txt"
+      "hello this is second text file (Contol D to exit)"
+     
+     
+11. test1.txt içeriğini yazdırmak
+      Gördüğünüz gibi, bu dosya oluşturmanın başka bir yoludur. Bu dosyayı cat komutuyla oluşturduk ve içeriği oluştururken yazdık.
+12. test.txt ve test1.txt dosyasının içeriğini aynı anda görüntülemek
+ 
+      "cat test.txt test1.txt"
+13. Geçerli klasörde multiple1.txt - multiple10.txt adlı metin dosyaları oluşturmak
+      Ayrıca "touch multiple1.txt multiple2.txt ... multiple10.txt" da kullanabilirsiniz.
+      "touch multiple{1..10}.txt
+       touch multiple1.txt multiple2.txt ... multiple10.txt"
+      
+      
+14. Üst klasöre geçmek
+      "cd .."
+     
+     
+15. "europe" adında bir klasör oluşturmak
+       "mkdir europe"
+      
+      
+16. Aynı anda lab.txt ve lab1.txt adlı iki dosya oluşturmak
+       "touch lab.txt lab1.txt"
+  
+  
+17. lab.txt "This is the second directories first file"
+      "echo "This is the first line of the second directory" > lab.txt"
+     
+     
+18. cat lab.txt
+      "lab.txt'nin içeriğini yazdırmak"
+     
+     
+19. Geçerli klasördeki lab.txt'yi newladb.txt olarak kopyalamak
+      Dosyayı geçerli klasöre kopyalarken bu kteomutu kullanırız.
+      "cp lab.txt newlab.txt
+       cp -i lab.txt newlab.txt
+       ((cp: overwrite 'newlab.txt'?))"
+20. Geçerli klasördeki tüm dosyaları listelemek
+      "ls -a"
+21. newlab.txt içeriğini yazdırmak
+      "cat newlab.txt"
+22. Geçerli klasördeki ".txt" uzantılı dosyaları listelemek
+      "ls *.txt"
+     
+     
+23. "n" ile başlayan ve ".txt" ile biten dosyaları listelemek
+      Lab ile başlayıp herhangi bir uzantıyla biten dosyaları listeleyin.
+     "ls n*.txt
+      ls lab?.*"
+24. newlab.txt dosyasını clarusway klasörüne kopyalamak
+      Hatırladığınız gibi newlab.txt europe klasöründe. clarusway adlı başka bir klasöre kopyalayacağız.
+      Bir dosyayı bir klasöre kopyalamak için, klasörün tam veya ilgili yolunu belirtin. Eğer hedef klasör yazılmazsa, dosya geçerli klasöre kopyalanır.
+      İlgili veya tam yol, mevcut çalışmadan bağımsız olarak bir dosya sisteminde aynı konuma işaret eder. Bunun için root dizini içermelidir.
+      Buna karşılık, ilgili yol, geçerli klasörden başlayarak, tam yol sağlama gereksinimini ortadan kaldırır.
+      "cp newlab.txt /home/robert/clarusway (absolute path)
+       cp newlab.txt ../clarusway/ (relative path)"
+     
+     
+25. "m*{6..10}" ile başlayıp ".txt" ile biten dosyaları clarusway'den europe klasörüne kopyalamak
+      "cd ..
+       cd clarusway
+       cp m*{6..10}.txt ../europe/"
+      
+      
+26. "m*{1..3}" ile başlayıp ".txt" ile biten dosyaları clarusway'den europe klasörüne TAŞIMAK
+      Taşı komutu, dosyaları veya klasörleri bir yerden başka bir yere taşıyan bir terminal komponentidir.
+      Tek dosyaları, çoklu dosyaları ve klasörleri taşımayı destekler. Üzerine yazmadan önce sorabilir ve yalnızca hedeften farklı bir yere taşıyabilir.
+     "cd ..
+      cd clarusway
+      mv m*{1..3}.txt ../europe/"
+     
+27. Clarusway klasöründeki tüm dosyaları listelemek
+      "ls -al"
+     
+28. europe klasöründeki newlab.txt dosyasını linuxlab.txt olarak yeniden adlandırmak
+      
+      "cd ../europe
+       mv newlab.txt linuxlab.txt"
+       
+       
+29. europe klasöründeki dosyaları listelemek ve yeniden adlandırılan linuxlab.txt dosyasına bakmak.
+      "ls -l"
+     
+     
+30. linuxlab.txt dosyasının izinlerini yazdırmak (isteğe bağlı)
+      "ls -l linuxlab.txt"
+31. linuxlab.txt dosyasının izinlerini herkesin okuyabileceği, yazabileceği ve çalıştrabileceği şekilde değiştirmek (isteğe bağlı)
+      "chmod -v ugo=rwx linuxlcdab.txt"
+32. linuxlab.txt dosyasındaki herkesin çalıştırma iznini yok olarak değiştirmek (isteğe bağlı)
+      "chmod -v 666 linuxlab.txt"
+     
+     
+33. linuxlab.txt'nin dosya izinlerini bir seviye yukarı çıkarmak (isteğe bağlı)
+      "chmod -v +x linuxlab.txt"
+      
+      
+      
+34. linuxlab.txt dosyasını silmek
+      Bu dosya eğer geçerli dizinde değilse tam yolu belirtmelisiniz.
+35. "america" klasörü oluşturmak
+     "mkdir america"
+    
+    
+    
+36. "america" klasörünü silmek
+     "rmdir america"
+    
+    
+37. "clarusway" klasörünü silmek
+     Bu dizini boş olmadığı için silemezsiniz.
+     "cd ..
+      rmdir clarusway
+      rm -r clarusway"
+     
+     
+38. "europe" klasörüne geçmek
+       "cd europe"
+      
+      
+39. "europe" klasörünün içeriğini yazdırmak
+      "ls"
+     
+     
+40. Gizli bir linuxworkshop.txt dosyası oluşturmak
+      "touch .linuxworkshop.txt"
+     
+     
+41. europe klasörünün içeriğini listelemek için ls komutunu kullanmak
+ls -a
+     Gördüğünüz gibi linuxworkshop.txt dosyasını göremiyoruz
+     Gizli olanlar dahil tüm dosyaları listelemek için "" komutunu kullanıyoruz.
+      "ls
+       ls -a"
+      
+      
+42. linuxworkshop.txt dosyasını görünür yapın
+      "mv .linuxworkshop.txt linuxworkshop.txt"
+     
+     
+43. Terminalden çıkmak
+       Linux Komut Satırını Kullanmak İçin İpuçları ve Püf Noktaları:
+      
+        Terminal çok fazla komutla dolarsa, terminali temizlemek için "clear" komutunu kullanabilirsiniz.
+        TAB, terminali doldurmak için kullanılabilir. Örneğin, “cd Doc” yazıp tab basarsanız, terminal geri kalanını doldurur ve “cd Documents" yapar.
+        Ctrl+C, terminaldeki herhangi bir komutu güvenli bir şekilde durdurmak için kullanılabilir.
+       
+        Bununla bitmezse, Ctrl+Z durdurmaya zorlamak için kullanılabilir.
+        "exit"
+       

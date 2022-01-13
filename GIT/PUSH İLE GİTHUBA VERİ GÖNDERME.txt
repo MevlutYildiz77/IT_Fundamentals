@@ -1,0 +1,246 @@
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~
+$ mkdir git lesson
+mkdir: cannot create directory ‘git’: File exists
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~
+$ mkdir git-lesson
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~
+$ cd git-lesson
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson
+$ mkdir tekrar
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson
+$ cd tekrar
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar
+$ git init
+Initialized empty Git repository in C:/Users/LENOVO/git-lesson/tekrar
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ touch yeni.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        yeni.txt
+
+nothing added to commit but untracked files present (use "git add" to
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ git add yeni.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   yeni.txt
+
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ git commit -m "yeni.txt dosyası oluşturuldu"
+[master (root-commit) ba63702] yeni.txt dosyası oluşturuldu
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 yeni.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ git log
+commit ba637023d7fc8813b5c0f9ee356b17f284eff308 (HEAD -> master)
+Author: MevlutYildiz77 <mevltyldz1@gmail.com>
+Date:   Wed Jul 14 17:17:00 2021 +0300
+
+    yeni.txt dosyası oluşturuldu
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/tekrar (master)
+$ cd ..
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson
+$ pwd
+/c/Users/LENOVO/git-lesson
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson
+$ ls
+tekrar/
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson
+$ git clone https://github.com/MevlutYildiz77/python-project.git
+Cloning into 'python-project'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson
+$ ls
+python-project/  tekrar/
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson
+$ cd python-project/
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ ls
+README.md
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ explore.exe
+bash: explore.exe: command not found
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ explore.exe .
+bash: explore.exe: command not found
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ explorer.exe .
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ touch hello-world.py
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello-world.py
+
+nothing added to commit but untracked files present (use "git add" to
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git add hello-world.py
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hello-world.py
+
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git commit -m "hello-world.py dosyası oluşturuldu."
+[main 2d4fe06] hello-world.py dosyası oluşturuldu.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello-world.py
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ echo "merhaba dünya" > hello-world.py
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello-world.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git add .
+warning: LF will be replaced by CRLF in hello-world.py.
+The file will have its original line endings in your working directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git commit -m "hello-world.py dosyası güncellendi"
+[main f7f6aad] hello-world.py dosyası güncellendi
+ 1 file changed, 1 insertion(+)
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git log
+commit f7f6aad33336673c48e66b86471264830561b9f0 (HEAD -> main)
+Author: MevlutYildiz77 <mevltyldz1@gmail.com>
+Date:   Wed Jul 14 18:35:19 2021 +0300
+
+    hello-world.py dosyası güncellendi
+
+commit 2d4fe0679985a39f6490b8c74cc115eacaa86bc5
+Author: MevlutYildiz77 <mevltyldz1@gmail.com>
+Date:   Wed Jul 14 18:33:47 2021 +0300
+
+    hello-world.py dosyası oluşturuldu.
+
+commit 2babf92a90510ffc1fa3d656f1b86b28c9451393 (origin/main, origin/HEAD)
+Author: MevlutYildiz77 <85449967+MevlutYildiz77@users.noreply.github.com>
+Date:   Wed Jul 14 21:19:30 2021 +0300
+
+    Initial commit
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git log --pretty=oneline
+f7f6aad33336673c48e66b86471264830561b9f0 (HEAD -> main) hello-world.py dosyası güncellendi
+2d4fe0679985a39f6490b8c74cc115eacaa86bc5 hello-world.py dosyası oluşturuldu.
+2babf92a90510ffc1fa3d656f1b86b28c9451393 (origin/main, origin/HEAD) Initial commit
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git log --oneline
+f7f6aad (HEAD -> main) hello-world.py dosyası güncellendi
+2d4fe06 hello-world.py dosyası oluşturuldu.
+2babf92 (origin/main, origin/HEAD) Initial commit
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 614 bytes | 204.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MevlutYildiz77/python-project.git
+   2babf92..f7f6aad  main -> main
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ ^C
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)
+$ git remote -v
+origin  https://github.com/MevlutYildiz77/python-project.git (fetch)
+origin  https://github.com/MevlutYildiz77/python-project.git (push)
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/git-lesson/python-project (main)

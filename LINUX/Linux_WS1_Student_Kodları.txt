@@ -1,0 +1,284 @@
+LENOVO@DESKTOP-85GCHBU MINGW64 ~
+$ pwd
+/c/Users/LENOVO
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~
+$ cd Desktop
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ mkdir "clarusway"
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ ls -l
+total 49
+drwxr-xr-x 1 LENOVO 197121     0 Jun  8 23:20  5-PLANLAMA/
+drwxr-xr-x 1 LENOVO 197121     0 Jul  3 00:06  MEV/
+drwxr-xr-x 1 LENOVO 197121     0 Jul  4 19:29  UYGULAMALAR/
+-rw-r--r-- 1 LENOVO 197121 16424 Jun 11 14:27 'Yeni Microsoft Word Belgesi.docx'
+drwxr-xr-x 1 LENOVO 197121     0 Jun  2 19:04  cemile/
+drwxr-xr-x 1 LENOVO 197121     0 Jul  4 20:57  clarusway/
+-rw-r--r-- 1 LENOVO 197121   282 Jan 20 20:18  desktop.ini
+drwxr-xr-x 1 LENOVO 197121     0 Jun  6 18:13  git-lesson-test/
+drwxr-xr-x 1 LENOVO 197121     0 Jul  3 12:25  git_lesson/
+drwxr-xr-x 1 LENOVO 197121     0 Jun 14 12:51  halime/
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch test.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ cat "hello" test.txt
+cat: hello: No such file or directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ echo "hello" > test
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ echo "hello" > test.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ echo "My name is Robert" >> test.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ cat test.txt
+hello
+My name is Robert
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch test1.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ echo "hello, this is second text  file" > test1.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ cat test1.txt
+hello, this is second text  file
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ cat test.txt test1.txt
+hello
+My name is Robert
+hello, this is second text  file
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch test1 test{1..10}
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch test1.txt test{1..10}
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch multiply1.txt{1..10}
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch multiply1.txt multiply{1..3}
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch multiply{1..3}
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch multiple1.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ touch multiple1.txt{1..3}
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop
+$ cd ..
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~
+$ mkdir "europe"
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~
+$ cd europe
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ touch lab.txt lab1.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ echo "This is the first line of the second directory" > lab.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cat lab.txt
+This is the first line of the second directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cp lab.txt newlab.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ ls -a
+./  ../  lab.txt  lab1.txt  newlab.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cat newlab.txt
+This is the first line of the second directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ ls *txt
+lab.txt  lab1.txt  newlab.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ ls *n*txt
+newlab.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ pwd
+/c/Users/LENOVO/europe
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cp newlab.txt clarusway
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ ls clarusway
+clarusway
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cat clarusway
+This is the first line of the second directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cp newlab.txt ../Desktop/clarusway
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cat clarusway
+This is the first line of the second directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cat ../Desktop/clarusway
+cat: ../Desktop/clarusway: Is a directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ cat ../Desktop/clarusway/newlab.txt
+This is the first line of the second directory
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$ ^C
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/europe
+$
+Drag the words into the correct boxes
+
+1.Display your current directory.
+
+$ 
+
+
+
+2.Change to the /etc directory.
+
+$  
+
+
+3.Now change to your home directory using only three key presses.
+
+$ 
+ 
+
+4.Change to the /etc/calendar directory using only eleven key presses. (use the tab key on your pc, just write here answer) 
+
+$ 
+
+
+5.Go to the parent directory of the current directory.
+
+$ 
+ 
+
+6.Go to the root directory.
+
+$ 
+ 
+
+7.List the contents of the root directory.
+
+$ 
+ 
+
+8.List a long listing of the root directory.
+
+$ 
+ 
+
+9.Stay where you are, and list the contents of /etc.
+
+$ 
+ 
+
+10.Stay where you are, and list the contents of /bin and /sbin.
+
+$ 
+ 
+
+11.Stay where you are, and list the contents of ~.
+
+$ 
+ 
+
+12.List all the files (including hidden files) in your home directory.
+
+$ 
+ 
+
+13.List the files in /boot in a human readable format.
+
+$ 
+ 
+
+14.Create a directory testdir in your home directory.
+
+$ 
+ 
+
+15.Change to the /etc directory, stay here and create a directory newdir in your home
+directory.
+
+$ 
+ 
+
+$ 
+ 
+
+16.Create in one command the directories ~/dir1/dir2/dir3 (dir3 is a subdirectory from dir2,
+and dir2 is a subdirectory from dir1 ).
+
+$ 
+ 
+
+17.Remove the directory testdir.
+
+$ 
+ 
+
+18.List the files in the /bin directory
+
+$ 
+ 
+
+19.Create a directory ~/touched and enter it.
+
+$ 
+ 
+
+$ 
+ 
+
+20.Create the files today.txt and yesterday.txt in touched.
+
+$ 
+ 
+
+21.Copy yesterday.txt to copy.yesterday.txt
+
+$ 
+ 
+
+22.Rename copy.yesterday.txt to clarus
+
+$  
+
+23.Create a directory called ~/testbackup and copy all files from ~/touched into it.
+
+$  
+
+$  
+
+24.Use one command to remove the directory ~/testbackup and all files into it.
+
+$ 

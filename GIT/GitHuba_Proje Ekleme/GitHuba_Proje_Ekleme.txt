@@ -1,0 +1,31 @@
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop/MEV/CLRSWY/GIT/new (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/LENOVO/Desktop/MEV/CLRSWY/GIT/new/.git/
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop/MEV/CLRSWY/GIT/new (master)
+$ touch lemonade.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop/MEV/CLRSWY/GIT/new (master)
+$ git add .
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop/MEV/CLRSWY/GIT/new (master)
+$ git commit -m "initialized repo and added lemonade"
+[master (root-commit) ab95d01] initialized repo and added lemonade
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 lemonade.txt
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop/MEV/CLRSWY/GIT/new (master)
+$ git remote add origin https://github.com/MevlutYildiz77/git-project.git
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop/MEV/CLRSWY/GIT/new (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 228 bytes | 76.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MevlutYildiz77/git-project.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+LENOVO@DESKTOP-85GCHBU MINGW64 ~/Desktop/MEV/CLRSWY/GIT/new (master)
+$
